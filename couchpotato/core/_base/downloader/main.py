@@ -122,7 +122,7 @@ class DownloaderBase(Provider):
         is_correct = protocol in self.protocol
 
         if not is_correct:
-            log.debug("Downloader doesn't support this protocol")
+            log.debug("Downloader doesn't support this protocol %s", protocol)
 
         return is_correct
 
